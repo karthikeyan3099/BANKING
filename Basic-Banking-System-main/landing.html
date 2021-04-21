@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Money Transfer Portal</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="landing.css">   
+	 <link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="loader()">
+
+	<!-- loader for splash screen -->
+	<div id="loading"></div>
+  
+
+<!--header start-->
+<header>
+	<div class="container">
+		<div class="row">
+		<div class="brand-name">
+			<a href="" class="logo">The Spark Foundation<span> <img src="logo_small.png" height="25"></span></a>
+			
+		</div>
+		<button class="ham-burger">
+			<i><img src="menu.png" height="25" ></i>
+			
+		</button>
+		<div class="navbar" id="navbarto">
+			<ul>
+				<li><a href="landing.html" >Home</a></li>
+				<li><a href="https://www.thesparksfoundationsingapore.org/" >About</a></li>
+				<li><a href="customers.html" >Transfer Money</a></li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	</div>
+</header>
+
+<!--header end-->
+
+
+<!--home start-->
+
+<section class="home" id="home">
+<div class="container">
+	<div  class="row full-screen">
+		<div class="home-content">
+			<div class="block">
+				<h3>Welcome To</h3>
+				<h1>Money Trasfer</h1>
+				<h1>Portal</h1>  <br><br>
+				<a class="get-started" href="./customers.html">Pay now</a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</section>
+
+    <!-- footer starts here -->
+    <footer>
+		<hr>
+		<div class="row text-center">
+		  <div class="col-md-6">
+			<p>This project is made by Tushant Yadav.</p>
+			
+		  </div>
+		  <div class="col-md-6 text-center">
+			  <ul class="social-icons">
+				Contact Me:
+				<li><a target="_blank" class="github" href="https://github.com/tushant-yadav/Basic-Banking-System"><i class="fab fa-github fa-2x"></i></a></li>
+				<li><a target="_blank" class="google" href="mailto:karthikeyan3099@gmail.com"><i class="fab fa-google fa-2x"></i></a></li>
+				<li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/tushant-yadav/"><i class="fab fa-linkedin fa-2x"></i></a></li>   
+			  </ul>
+		  </div>
+		</div>
+	  </footer>
+	  <!-- footer ends here -->
+
+
+
+
+
+  <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#navbarto").fadeToggle()
+      
+  });
+});
+</script>
+
+<script>
+	var preloader = document.getElementById("loading");
+	function loader(){
+	  preloader.style.display = 'none';
+	}
+  </script>
+
+</body>
+</html>
